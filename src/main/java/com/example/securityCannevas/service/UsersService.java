@@ -8,5 +8,7 @@ public interface UsersService {
 
     public Users save(Users users);
 
-    public List<Users> getAll();
+    public Users findByUserName(String userName);
+
+    public List<Users> findAll();
 }

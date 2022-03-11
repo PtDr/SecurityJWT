@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AuthorityJpaDao extends JpaRepository<Authority, Long> {
+    Authority findByLibelle(String libelle);
 }
